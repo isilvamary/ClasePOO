@@ -4,8 +4,13 @@
  */
 package main;
 
+import java.util.ArrayList;
+
+import core.book.Audiolibro;
+import core.book.Libro;
 import core.megaferia.Editorial;
 import core.megaferia.Megaferia;
+import core.person.Autor;
 import core.person.Gerente;
 import core.person.Narrador;
 
@@ -61,6 +66,10 @@ public class Main {
         editorial2.addStand(megaferia.getStand(15772400));
         
         // Paso (8)
+        Autor Autor1 = new Autor(null, 15468);
+        ArrayList<Autor> autores = new ArrayList<>();
+        autores.add(Autor1);
+        Audiolibro libro1 = new Audiolibro(null, autores, null, null, null, 545, editorial1, 4, narrador );
         
         
     }
